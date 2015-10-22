@@ -128,10 +128,10 @@ main(int argc, char *argv[])
 	/* Encrypt or decrypt. */
 	if (dec)
 		rc = scryptdec_file(infile, outfile, (uint8_t *)passwd,
-		    strlen(passwd), maxmem, maxmemfrac, maxtime);
+		    strlen(passwd), maxmem, maxmemfrac, maxtime, 0);
 	else
 		rc = scryptenc_file(infile, outfile, (uint8_t *)passwd,
-		    strlen(passwd), maxmem, maxmemfrac, maxtime);
+		    strlen(passwd), maxmem, maxmemfrac, maxtime, 0);
 
 	/* Zero and free the password. */
 	insecure_memzero(passwd, strlen(passwd));
