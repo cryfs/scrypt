@@ -24,7 +24,7 @@ REMOVE_ITEM_IF_EXISTS(BII_test_main_SRC libcperciva/cpusupport/Build/cpusupport-
 # Actually create targets: EXEcutables and libraries.
 ADD_BII_TARGETS()
 
-REQUIRE_GCC_VERSION(4.9)
+REQUIRE_GCC_VERSION(4.8)
 
 #-------------------------------------------------------------------------
 # Create cpusupport_config.h with information about supported CPU features
